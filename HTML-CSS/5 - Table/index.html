@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <style>
+        table,
+        td {border: 1px solid #333;}
+        thead,
+        tfoot {background-color: #333; color: #fff;}
+    </style>
+    <title>Tableau</title>
+</head>
+<body>
+    <h1>Tableau</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Prénom</th>
+                <th>E-mail</th>
+                <th></th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>#1</td>
+                <td>Michou</td>
+                <td>michou@gmail.com</td>
+                <td><button>Supprimer</button></td>
+            </tr>
+            <tr>
+                <td>#2</td>
+                <td>John</td>
+                <td>john@gmail.com</td>
+                <td><button>Supprimer</button></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Total apprenants :</td>
+                <td colspan="2">Il y a 2 apprenants</td>
+            </tr>
+            <tr>
+                <td>Dont un garçon</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan=4>Tableau des apprenants</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

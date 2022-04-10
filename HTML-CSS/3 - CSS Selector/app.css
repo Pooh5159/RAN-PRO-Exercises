@@ -1,0 +1,91 @@
+
+/* Sélectionne les h1 du document et applique la couleur jaune à la police d'écritue */
+h1 {
+    color: yellow;
+}
+
+/*  */
+.rouge {
+    color: rosybrown;
+}
+
+#sans-serif {
+    font-family: sans-serif;
+}
+
+/* {
+    background-color: green;
+}*/
+
+body {
+    background-color: #E3E3E3;
+}
+
+/* Sélection les éléments p qui sont descendant d'un élément section */
+section p {
+    text-transform: uppercase;
+    background-color: fuchsia;
+}
+
+/*  Sélectionne les éléments span qui sont descendant d'un élément p dont sa classe vaut "rouge" */
+p.rouge span {
+    font-size: 13px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Sélectionne les éléments h2 qui sont les fils direct d'un élément section */
+section > h2 {
+    text-decoration: underline yellow;
+}
+
+/* Sélectionne un élément span dont la classe vaut "bold" qui est descandant d'un élément p qui est lui-même un fils direct d'un élément article */
+article > p span.bold {
+    background-color: black;
+    color: white;
+}
+
+header + h3 {
+    text-align: center;
+}
+
+/* Sélectionne les élément h2 et h3 du document */
+h3, h2 {
+    background-color: #fff;
+    color: gold;
+}
+
+/* Sélectionne un élément p qui est un voisin direct d'un élément dont la classe vaut "card-body" qui est lui-même un fils direct d'un élément dont la classe vaut "card" ET sélectionne un élément dont la classe vaut "card-footer" qui est un fils direct d'un élément dont la classe vaut "card" */
+.card > .card-body + p, .card > .card-footer {
+    text-align: left;
+}
+
+/* 
+:focus -> Quand un champ de saisie est sélectionner
+:visited -> Pour les liens après avoir cliqué dessus
+:checked -> Quand une checkbox ou un bouton radio est coché
+:last-child -> Le dernier enfant
+:last-of-type -> Le dernier type
+:nth-child(an + b) -> Sélectionne un énième enfant
+:nth-of-type(an + b) -> Sélectionne un énième type
+:not() -> "Qui n'est pas"
+*/
+
+h1:hover {
+    transform: scale(1.2);
+    text-align: center;
+}
+
+/* Sélectionne un élément span descendant d'un élément p lors du survol de l'élément */
+p:hover span {
+    font-size: 100px;
+}
+
+/* Sélectionne les li sauf le premier élément de ce type */
+li:not(:first-of-type) {
+    margin-top: 15px;
+    background-color: black;
+    color: yellow;
+}

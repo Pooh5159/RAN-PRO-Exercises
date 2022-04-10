@@ -1,0 +1,26 @@
+:root {--dark_purple: #240046;--purple: #3C096C;--purple2: #5A189A;--light_purple: #7B2CBF;--contrast: #B7BF2C;}
+* { box-sizing: border-box;}
+body { font-family: sans-serif; margin: 0; color: #3A3A3A;}
+main {width: 90%; margin: 0 auto;}
+section {margin-bottom: 5rem; scroll-behavior: smooth; overflow: auto;}
+code {background-color: #A3A3A3; border-radius: 5px; padding: 0.5em 0.75em; color: #E3E3E3; font-size: 1.16rem; display: inline-block; margin: 1rem 0;}
+h1 {text-transform: uppercase; text-align: center; font-weight: 900; letter-spacing: -3px; font-size: 3rem; margin: 0; line-height: 1;}
+h2 {font-weight: 900; font-size: 2rem; display: inline-block; position: relative; line-height: 1;}
+h2:after {content: ''; height: 1.5rem; width: 100%; background-color: var(--contrast); display: block; position: absolute; top: 50%; z-index: -1;}
+header {background-color: var(--dark_purple); color: #F3F3F3; top:0; z-index: 3; width: 100%; padding: 3rem 0;}
+nav {margin-top: 1rem;}
+nav ul { display: flex; justify-content: center; list-style: none; margin: 0; padding: 0;}
+nav ul li:not(:first-of-type):before { content: '•'; margin: 0 1rem;}
+a { text-decoration: none; color: inherit; font-size: 1.75rem; text-transform: capitalize;}
+a:hover {text-decoration: underline var(--contrast); font-weight: 700;}
+p{line-height: 1.6;}
+.flex-item { color: #FFF; padding: 2em;}
+.flex-item:first-of-type {background-color: var(--dark_purple);}
+.flex-item:nth-of-type(2) {background-color: var(--purple);}
+.flex-item:nth-of-type(3) {background-color: var(--purple2);}
+.flex-item:last-of-type {background-color: var(--light_purple);}
+.conteneur-flexbox {border: 2px dashed#E0AAFF; padding: 0.25em; margin-bottom: 3rem}
+.ml-5 {margin-left: 2rem; padding:1rem 0 1rem 3rem; border-left: 2px solid var(--purple2);}
+.bold {font-weight: 500; color: #F3F3F3; background-color: var(--purple); padding: 0.25em .5em; border-radius: 3px;}
+@media screen and (max-width: 412px){h2:after {height: 3rem; bottom: 0; top: initial;}}
+@media screen and (max-width: 580px) {code { display: block; white-space: pre-wrap;}}

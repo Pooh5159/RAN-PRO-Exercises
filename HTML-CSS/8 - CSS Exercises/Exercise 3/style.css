@@ -1,0 +1,294 @@
+h1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: darkgreen;
+}
+
+.dicebox {
+    background-color: lightgreen;
+    border-radius: 25px;
+    width: 100%;
+    height: 250px;
+    margin: 50px auto;
+    box-shadow: inset -10px -10px 10px #6bb36b;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dice1 {
+    background-color: green;
+    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    box-shadow: inset -10px -10px 10px #005000;
+    display: flex;
+    align-items: center;
+}
+
+.dot1-1 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+    margin: auto;
+}
+
+.dice2 {
+    background-color: green;
+    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    box-shadow: inset -10px -10px 10px #005000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dot2-1 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+    margin-top: 5px;
+}
+
+.dot2-2 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+    align-self: flex-end;
+    margin-bottom: 5px;
+}
+
+.dice3 {
+    background-color: green;
+    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    box-shadow: inset -10px -10px 10px #005000;    
+    display: flex;
+    justify-content: space-around;
+}
+
+.dot3-1 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+    align-self: flex-start;
+    margin-top: 5px;
+}
+
+.dot3-2 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+    margin: auto;
+
+}
+
+.dot3-3 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+    align-self: flex-end;
+    margin-bottom: 5px;
+}
+
+.dice4 {
+    background-color: green;
+    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+    box-shadow: inset -5px -5px 5px #01b301;
+    padding: 10px;
+    box-shadow: inset -10px -10px 10px #005000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#dot4-12 {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.dot4-1 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+}
+
+.dot4-2 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+}
+
+#dot4-34 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dot4-3 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+}
+
+.dot4-4 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+}
+
+.dice5 {
+    background-color: green;
+    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    box-shadow: inset -10px -10px 10px #005000;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#dot5-12 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dot5-1 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+}
+
+.dot5-2 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+}
+
+.dot5-3 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+    margin: auto;
+}
+
+#dot5-45 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dot5-4 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+}
+
+.dot5-5 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+}
+
+.dice6 {
+    background-color: green;
+    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    box-shadow: inset -10px -10px 10px #005000;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.dot6-1 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+    margin: auto;
+}
+
+.dot6-2 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+    margin: auto;
+}
+
+.dot6-3 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+    margin: auto;
+}
+
+.dot6-4 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+    margin: auto;
+}
+
+.dot6-5 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+    margin: auto;
+}
+
+.dot6-6 {
+    background-color: lime;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -5px -5px 5px #01b301;
+    margin: auto;
+}

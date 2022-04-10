@@ -1,0 +1,48 @@
+*, *:after, *before {
+    box-sizing: border-box;
+}
+
+.conteneur {
+    background-color: #d3d3d3;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 200px;
+    padding: 10px 50px 25px 35px;
+    /* padding: 10px 20px -> 10px bas et haut et 20 px droite et gauche */
+}
+
+.block {
+    background-color: #ff0000;
+    width: 100px;
+    height: 100px;
+    padding: 5px 10px;
+    border: 5px solid black;
+    /* border-top-color: ;
+    border-top-size: ;
+    border-top-width: ;
+    border-bottom-color: ;
+    border-bottom-width: ;
+    border-bottom-width: ;
+    ... */
+}
+
+.cube {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+}
+
+.ligne {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    margin-left: 10px;
+}
+
+.debordement  {
+    width: 50px;
+    height: 350px;
+    background-color: blue;
+    overflow: scroll;
+}

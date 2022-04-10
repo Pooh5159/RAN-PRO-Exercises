@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Aladin;
+    src: local(assets/fonts/Aladin-Regular);
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap);
+}
+
+h1.hero-title {
+    font-family: Aladin;
+    font-size: 42px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header {
+    font-family: Oswald;
+    background-color: #3a3a3a;
+    color: #e4e4e4;
+}
+
+ul.navbar-nav li.nav-item {
+    font-family: Oswald;
+    list-style-type:none;
+    text-transform: capitalize;
+    background-color: #3a3a3a;
+
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 0.5em 1em;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+li.nav-item:not(:first-of-type) {
+    margin-left: 1em;
+}
+
+li.nav-item a {
+    font-family: Oswald;
+    text-decoration: none;
+    color: #e4e4e4;
+    font-size: 22px;
+}
+
+li.nav-item :hover{
+    color: coral;
+}
+
+h2, h3 {
+    font-family: Oswald;
+    color: coral;
+    background-color: #3a3a3a;
+}
+
+article p {
+    font-family: Oswald;
+    font-weight: 300;
+}
+
+p:last-child {
+    font-family: Oswald;
+    font-weight: 400;
+    text-align: center;
+}
+
+ul {
+    font-family: Oswald;
+}
+
+li:nth-child(2n+0) {
+    background-color: #e3e3e3;
+}

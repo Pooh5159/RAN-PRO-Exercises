@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1>Formulaire</h1>
+
+    <!--
+        Action : C'est l'élément qui va recevoir les données du formulaire.
+        Method : C'est la manière d'envoyer les données (GET,POST,...).
+        GET -> Envoi les données dans l'URL et est limité à 255 caractères.
+        POST -> Envoi les données dans le corps de la requête.
+    -->
+    <form action="traitement.php" method="GET">
+        <div class="form-group">
+            <label for="email">E-mail :</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="form-group">
+            <label for="">Password :</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div class="form-group">
+            <label for="keep_alive"> Rester connecté(e)?
+                <input type="checkbox" name="keepAlive" id="keep_alive">
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Votre personnage :</p>
+            <label for="conan">Conan <input type="radio" value="conan" name="personnage" id="conan"></label>
+            <label for="seldon">Seldon<input type="radio" value="seldon" name="personnage" id="seldon"></label>
+            <label for="licorne">Licorne<input type="radio" value="licorne" name="personnage" id="licorne"></label>
+            <label for="chani">Chani<input type="radio" value="chani" name="personnage" id="chani"></label>
+        </div>
+        <button type="submit">Se connecter</button>
+    </form>
+</body>
+</html>

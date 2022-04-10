@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Flexbox</h1>
+        <nav>
+            <ul>
+                <li><a href="#conteneur">conteneur</a></li>
+                <li><a href="#wrap">contenant</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteneur">
+        <section>
+            <h2>Propriétés conteneur</h2>
+            <div class="ml-5">
+
+
+                <!-- DEBUT display: flex -->
+                <pre><code>#display { display: flex; }</code></pre>
+                <p>Permet de créer un <span class="bold">conteneur flexible</span> et les éléments enfants(1,2,3,4)
+                    deviendront alors des <span class="bold">éléments flexibles</span></p>
+                <div id="display" class="conteneur-flexbox">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                </div>
+                <!-- FIN -->
+
+                <!-- DEBUT flex-direction: row/column -->
+                <pre><code>#direction { display: flex; flex-direction: column;}</code></pre>
+                <p>Permet de disposer les éléments enfants(1,2,3,4) les uns à coté des autres(row) ou les uns en-dessous
+                    des autres(column)</p>
+                <div id="direction" class="conteneur-flexbox">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                </div>
+                <!-- FIN -->
+
+                <!-- DEBUT flex-direction: reverse-row/reverse-column -->
+                <pre><code>#reverse { display: flex; flex-direction: row-reverse;}</code></pre>
+                <div id="reverse" class="conteneur-flexbox">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                </div>
+                <!-- FIN -->
+
+                <!-- DEBUT justify-content: flex-start/flex-end/center/space-between/space-around -->
+                <pre><code>#justify { display: flex; justify-content: flex-end;}</code></pre>
+                <div id="justify" class="conteneur-flexbox">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                </div>
+                <!-- FIN -->
+
+                <!-- DEBUT align-items: stretch/flex-start/flex-end/center/baseline -->
+                <pre><code>#align { display: flex; align-items: center;}</code></pre>
+                <div id="align" class="conteneur-flexbox">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                </div>
+                <!-- FIN -->
+
+                <!-- DEBUT flex-wrap: wrap/nowrap/wrap-reverse -->
+                <pre><code>#wrap { display: flex; flex-wrap: wrap;}</code></pre>
+                <div id="wrap" class="conteneur-flexbox">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                </div>
+                <!-- FIN -->
+
+
+
+            </div>
+        </section>
+        <section id="contenant">
+            <h2>Propriétés contenant</h2>
+            <div class="ml-5">
+
+
+
+                <!-- DEBUT order: [-9999,9999] -->
+                <pre><code>#dernier { order: 3 }</code></pre>
+                <div class="conteneur-flexbox flex">
+                    <div id="dernier" class="flex-item">1</div>
+                    <div id="" class="flex-item">2</div>
+                    <div id="trois" class="flex-item">3</div>
+                    <div id="" class="flex-item">4</div>
+                </div>
+                <!-- FIN -->
+
+                <!-- DEBUT flex-grow: [1,9999] -->
+                <pre><code>#grow { flex-grow: 3 }</code></pre>
+                <div class="conteneur-flexbox flex">
+                    <div id="" class="flex-item">1</div>
+                    <div id="grossir" class="flex-item">2</div>
+                    <div id="" class="flex-item">3</div>
+                    <div id="grossir2" class="flex-item">4</div>
+                </div>
+                <!-- FIN -->
+
+                <!-- DEBUT flex-basis: 200px -->
+                <pre><code>#basis { flex-basis: 200px }</code></pre>
+                <div id="basis" class="conteneur-flexbox flex">
+                    <div id="" class="flex-item">1</div>
+                    <div id="" class="flex-item">2</div>
+                    <div id="" class="flex-item">3</div>
+                    <div id="" class="flex-item">4</div>
+                </div>
+                <!-- FIN -->
+
+                <!-- DEBUT flex-shrink: [1,9999] -->
+                <pre><code>#shrink { flex-shrink: 3 }</code></pre>
+                <div id="shrink" class="conteneur-flexbox flex">
+                    <div id="neretrecipas" class="flex-item">1</div>
+                    <div id="" class="flex-item">2</div>
+                    <div id="" class="flex-item">3</div>
+                    <div id="" class="flex-item">4</div>
+                </div>
+                <!-- FIN -->
+
+                <!-- DEBUT align-self: auto/stretch/center/flex-start/flex-end/baseline -->
+                <pre><code>#basic { align-self: flex-start }</code></pre>
+                <div id="self" class="conteneur-flexbox flex h500">
+                    <div id="" class="flex-item">1</div>
+                    <div id="align-self" class="flex-item">2</div>
+                    <div id="" class="flex-item">3</div>
+                    <div id="" class="flex-item">4</div>
+                </div>
+                <!-- FIN -->
+            </div>
+        </section>
+
+        <!-- Centrer sur l'axe horizontale sans les flexboxs -->
+        <div class="boite">
+            <div class="cube"></div>
+        </div>
+
+
+    </main>
+</body>
+
+</html>

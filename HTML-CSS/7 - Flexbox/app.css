@@ -1,0 +1,82 @@
+@import './assets/dontlook.css';
+
+#display {
+    display: flex;
+}
+
+#direction {
+    display: flex;
+    flex-direction: column;
+}
+
+#reverse { 
+    display: flex; flex-direction:row-reverse;
+}
+
+#justify { 
+    display: flex; 
+    /* par défaut flex-direction = "row" */
+    /* par défaut justify-content = "flex-start" */
+    justify-content: flex-end;
+}
+
+#align { 
+    display: flex; 
+    /* par défaut align-items = "stretch" */
+    align-items: center;
+}
+#wrap {
+    display: flex; 
+    width: 75%;
+    /* par défaut flex-wrap = "nowrap" */
+    flex-wrap: wrap-reverse;
+    align-content: space-between;
+    height: 250px;
+}
+
+#wrap .flex-item { 
+    background-color: greenyellow;
+}
+
+/* Le conteneur */
+#order {
+    display:flex
+}
+
+/* Un contenant */
+#dernier {
+    order: 1;
+}
+
+#trois {
+    order: -1;
+}
+
+
+
+
+
+/* Le conteneur */
+#self {
+    display: flex;
+    height: 500px;
+    align-items: flex-start;
+}
+
+#align-self {
+    align-self: center;
+}
+
+.boite {
+    width: 75%;
+    background-color: coral;
+    margin: 0 auto;
+}
+
+.cube {
+    /* Cube fait 25% de 75% */
+    width: 25%;
+    height: 250px;
+    background-color: blue;
+    margin: 0 auto;
+}
